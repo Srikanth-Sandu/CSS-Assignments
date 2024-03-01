@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+            .nav{
+                background-color: rgb(14, 12, 12);
+                
+            
+            }
+            .nav>li{
+                color: rgb(213, 213, 236);
+                list-style: none;
+                display: inline-block;
+                margin:10px;
+            }
+            .nav>li:hover{
+                background-color: rgb(103, 109, 109);
+            }
+            .nav>li:hover .dropdown{
+                display:block;
+            }
+            .dropdown{
+                position: absolute;
+                list-style: none;
+                margin:10px;
+                display: none;
+                padding-left: 0px;
+                color: rgb(25, 25, 36);
+                
+            }
+            .dropdown li{
+                margin-bottom: 5px;
+                border: 1px solid;
+                background-color: rgb(191, 207, 202);
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="nav">
+           <li>Courses
+            <ul class="dropdown">
+                <li>ReactJS</li>
+                <li>Angular</li>
+                <li>NodejS</li>
+                <li>ExpressJS</li>
+            </ul>
+           </li>
+           <li>About</li>
+        </ul>
+    </body>
+</html>
